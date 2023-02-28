@@ -27,7 +27,7 @@ final class NTPClient {
     func start(pool: [String], port: Int) {
         precondition(!pool.isEmpty, "Must include at least one pool URL")
         queue.async {
-            precondition(self.reachability.callback == nil, "Already started")
+            //precondition(self.reachability.callback == nil, "Already started")
             self.pool = pool
             self.port = port
             self.reachability.callbackQueue = self.queue
