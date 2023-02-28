@@ -78,6 +78,9 @@ public typealias LogCallback = (String) -> Void
         ntp.pause()
     }
 
+    @objc public func checkReachability() -> Bool {
+        ntp.checkReachability
+    }
     public func fetchIfNeeded(queue callbackQueue: DispatchQueue = .main,
                               first: ReferenceTimeCallback? = nil,
                               completion: ReferenceTimeCallback? = nil) {
