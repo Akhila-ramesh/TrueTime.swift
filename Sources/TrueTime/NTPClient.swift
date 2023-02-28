@@ -37,7 +37,7 @@ final class NTPClient {
         }
     }
     
-    func checkReachability {
+    func checkReachability() -> Bool {
         self.reachability.callback != nil ? true : false
     }
 
